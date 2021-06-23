@@ -1,0 +1,203 @@
+{
+    "uuid": "f6eebe6d-bd82-4e73-9654-d772b0cfbfe1",
+    "display": "AaBET - 78108 - Aabet ERTriage",
+    "identifiers": [
+        {
+            "display": "MRN = AaBET - 78108",
+            "uuid": "9325a3d1-4f04-4efd-9e28-07d7d739d887",
+            "identifier": "AaBET - 78108",
+            "identifierType": {
+                "uuid": "81433852-3f10-11e4-adec-0800271c1b75",
+                "display": "MRN",
+                "links": [
+                    {
+                        "rel": "self",
+                        "uri": "http://34.122.219.240/openmrs/ws/rest/v1/patientidentifiertype/81433852-3f10-11e4-adec-0800271c1b75"
+                    }
+                ]
+            },
+            "location": null,
+            "preferred": true,
+            "voided": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "uri": "http://34.122.219.240/openmrs/ws/rest/v1/patient/f6eebe6d-bd82-4e73-9654-d772b0cfbfe1/identifier/9325a3d1-4f04-4efd-9e28-07d7d739d887"
+                },
+                {
+                    "rel": "full",
+                    "uri": "http://34.122.219.240/openmrs/ws/rest/v1/patient/f6eebe6d-bd82-4e73-9654-d772b0cfbfe1/identifier/9325a3d1-4f04-4efd-9e28-07d7d739d887?v=full"
+                }
+            ],
+            "resourceVersion": "1.8"
+        }
+    ],
+    "person": {
+        "uuid": "f6eebe6d-bd82-4e73-9654-d772b0cfbfe1",
+        "display": "Aabet ERTriage",
+        "gender": "O",
+        "age": 10,
+        "birthdate": "2011-06-22T00:00:00.000+0300",
+        "birthdateEstimated": false,
+        "dead": false,
+        "deathDate": null,
+        "causeOfDeath": null,
+        "preferredName": {
+            "display": "Aabet ERTriage",
+            "uuid": "be7ea582-c043-450f-9212-4b6101f70f18",
+            "givenName": "Aabet",
+            "middleName": null,
+            "familyName": "ERTriage",
+            "familyName2": null,
+            "voided": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "uri": "http://34.122.219.240/openmrs/ws/rest/v1/person/f6eebe6d-bd82-4e73-9654-d772b0cfbfe1/name/be7ea582-c043-450f-9212-4b6101f70f18"
+                },
+                {
+                    "rel": "full",
+                    "uri": "http://34.122.219.240/openmrs/ws/rest/v1/person/f6eebe6d-bd82-4e73-9654-d772b0cfbfe1/name/be7ea582-c043-450f-9212-4b6101f70f18?v=full"
+                }
+            ],
+            "resourceVersion": "1.8"
+        },
+        "preferredAddress": null,
+        "names": [
+            {
+                "display": "Aabet ERTriage",
+                "uuid": "be7ea582-c043-450f-9212-4b6101f70f18",
+                "givenName": "Aabet",
+                "middleName": null,
+                "familyName": "ERTriage",
+                "familyName2": null,
+                "voided": false,
+                "links": [
+                    {
+                        "rel": "self",
+                        "uri": "http://34.122.219.240/openmrs/ws/rest/v1/person/f6eebe6d-bd82-4e73-9654-d772b0cfbfe1/name/be7ea582-c043-450f-9212-4b6101f70f18"
+                    },
+                    {
+                        "rel": "full",
+                        "uri": "http://34.122.219.240/openmrs/ws/rest/v1/person/f6eebe6d-bd82-4e73-9654-d772b0cfbfe1/name/be7ea582-c043-450f-9212-4b6101f70f18?v=full"
+                    }
+                ],
+                "resourceVersion": "1.8"
+            }
+        ],
+        "addresses": [],
+        "attributes": [
+            {
+                "display": "General",
+                "uuid": "df22f9a2-b8dc-4101-8a13-197cca1aca8d",
+                "value": {
+                    "uuid": "c1fc20ab-3f10-11e4-adec-0800271c1b75",
+                    "display": "General",
+                    "links": [
+                        {
+                            "rel": "self",
+                            "uri": "http://34.122.219.240/openmrs/ws/rest/v1/concept/c1fc20ab-3f10-11e4-adec-0800271c1b75"
+                        }
+                    ]
+                },
+                "attributeType": {
+                    "uuid": "c1f455e7-3f10-11e4-adec-0800271c1b75",
+                    "display": "class",
+                    "links": [
+                        {
+                            "rel": "self",
+                            "uri": "http://34.122.219.240/openmrs/ws/rest/v1/personattributetype/c1f455e7-3f10-11e4-adec-0800271c1b75"
+                        }
+                    ]
+                },
+                "voided": false,
+                "links": [
+                    {
+                        "rel": "self",
+                        "uri": "http://34.122.219.240/openmrs/ws/rest/v1/person/f6eebe6d-bd82-4e73-9654-d772b0cfbfe1/attribute/df22f9a2-b8dc-4101-8a13-197cca1aca8d"
+                    },
+                    {
+                        "rel": "full",
+                        "uri": "http://34.122.219.240/openmrs/ws/rest/v1/person/f6eebe6d-bd82-4e73-9654-d772b0cfbfe1/attribute/df22f9a2-b8dc-4101-8a13-197cca1aca8d?v=full"
+                    }
+                ],
+                "resourceVersion": "1.8"
+            },
+            {
+                "display": "landHolding = 2",
+                "uuid": "5461e9eb-d0cf-4c79-a300-2c6437a79bf0",
+                "value": 2,
+                "attributeType": {
+                    "uuid": "3dfdc176-17fd-42b1-b5be-c7e25b78b602",
+                    "display": "landHolding",
+                    "links": [
+                        {
+                            "rel": "self",
+                            "uri": "http://34.122.219.240/openmrs/ws/rest/v1/personattributetype/3dfdc176-17fd-42b1-b5be-c7e25b78b602"
+                        }
+                    ]
+                },
+                "voided": false,
+                "links": [
+                    {
+                        "rel": "self",
+                        "uri": "http://34.122.219.240/openmrs/ws/rest/v1/person/f6eebe6d-bd82-4e73-9654-d772b0cfbfe1/attribute/5461e9eb-d0cf-4c79-a300-2c6437a79bf0"
+                    },
+                    {
+                        "rel": "full",
+                        "uri": "http://34.122.219.240/openmrs/ws/rest/v1/person/f6eebe6d-bd82-4e73-9654-d772b0cfbfe1/attribute/5461e9eb-d0cf-4c79-a300-2c6437a79bf0?v=full"
+                    }
+                ],
+                "resourceVersion": "1.8"
+            }
+        ],
+        "voided": false,
+        "auditInfo": {
+            "creator": {
+                "uuid": "c1c21e11-3f10-11e4-adec-0800271c1b75",
+                "display": "superman",
+                "links": [
+                    {
+                        "rel": "self",
+                        "uri": "http://34.122.219.240/openmrs/ws/rest/v1/user/c1c21e11-3f10-11e4-adec-0800271c1b75"
+                    }
+                ]
+            },
+            "dateCreated": "2021-06-22T10:22:39.000+0300",
+            "changedBy": null,
+            "dateChanged": null
+        },
+        "deathdateEstimated": false,
+        "birthtime": null,
+        "links": [
+            {
+                "rel": "self",
+                "uri": "http://34.122.219.240/openmrs/ws/rest/v1/person/f6eebe6d-bd82-4e73-9654-d772b0cfbfe1"
+            }
+        ],
+        "resourceVersion": "1.11"
+    },
+    "voided": false,
+    "auditInfo": {
+        "creator": {
+            "uuid": "c1c21e11-3f10-11e4-adec-0800271c1b75",
+            "display": "superman",
+            "links": [
+                {
+                    "rel": "self",
+                    "uri": "http://34.122.219.240/openmrs/ws/rest/v1/user/c1c21e11-3f10-11e4-adec-0800271c1b75"
+                }
+            ]
+        },
+        "dateCreated": "2021-06-22T10:22:39.000+0300",
+        "changedBy": null,
+        "dateChanged": null
+    },
+    "links": [
+        {
+            "rel": "self",
+            "uri": "http://34.122.219.240/openmrs/ws/rest/v1/patient/f6eebe6d-bd82-4e73-9654-d772b0cfbfe1"
+        }
+    ],
+    "resourceVersion": "1.8"
+}
