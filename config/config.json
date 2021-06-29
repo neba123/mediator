@@ -1,22 +1,22 @@
 {
   "port": 4003,
   "heartbeat": true,
-  "register": false,
+  "register": true,
   "host": "",
   "endpoints": [],
   "log_level": "info",
   "statsd": {},
   "api": {
-    "apiURL": "https://192.168.1.135:8080",
+    "apiURL": "https://192.168.0.163:8080",
     "username": "root@openhim.org",
-    "password": "password",
+    "password": "pass1234",
     "trustSelfSigned": true
   },
   "mediatorConf": {
     "urn": "urn:uuid:a15c3d48-0686-4c9b-b375-f68d2f244a33",
     "version": "0.1.0",
-    "name": "JSON2HL7",
-    "description": "JSON to HL7 and HL7 to JSON adapter mediator",
+    "name": "OpenMRD2Polytech",
+    "description": "OpenMRS to Polytech mediator",
     "defaultChannelConfig": [],
     "endpoints": [
       {

@@ -17,6 +17,21 @@ module.exports = {
          }
         );
     },
+    create_marker: (data, callBack) => {
+        pool.query(
+        `insert into results(id) 
+            values (?)`,
+         [
+            data.id
+         ],
+         (error, results, fields) => {
+             if(error) {
+                 return callBack(error);
+             }
+             return callBack(null, results)
+         }
+        );
+    },
     getlabResults: callBack => {
         pool.query(
             `select id,content from results`,
@@ -31,13 +46,13 @@ module.exports = {
     },
     getlabResultBylabResultID: (id, callBack ) => {
         pool.query(
-            `select content from results where id = ?`,
+            `select id,content from results where id = ?`,
             [id],
             (error, results, fields) => {
                 if(error) {
                     return callBack(error);
                 }
-                return callBack(null, JSON.parse(results[0].content));
+                return callBack(null, results[0]);
             }
         );
     },
