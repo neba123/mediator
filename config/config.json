@@ -1,7 +1,7 @@
 {
   "port": 4003,
   "heartbeat": true,
-  "register": true,
+  "register": false,
   "host": "",
   "endpoints": [],
   "log_level": "info",

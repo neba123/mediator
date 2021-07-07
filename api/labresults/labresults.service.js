@@ -17,20 +17,30 @@ module.exports = {
          }
         );
     },
-    create_marker: (data, callBack) => {
-        pool.query(
-        `insert into results(id) 
-            values (?)`,
-         [
-            data.id
-         ],
-         (error, results, fields) => {
-             if(error) {
-                 return callBack(error);
-             }
-             return callBack(null, results)
-         }
-        );
+    createTestName: (data, callBack) => {
+        
+        console.log("----------------------------" + data.length)
+        var success;
+        for(value of data) {
+            pool.query(
+                `insert into testID(testUuid, testName, conceptClass) 
+                    values (?,?,?)
+                    on duplicate key update testUuid=values(testUuid), testName= values(testName), conceptClass= values(conceptClass)`,
+                 [
+                    value.testUuid,
+                    value.testName,
+                    value.conceptClass
+                 ],
+                 (error, results, fields) => {
+                     if(error) {
+                         success= false;
+                         return callBack(error);
+                     }
+                     success= results;
+                 }
+                );
+        }
+        if(success) return callBack(null, success);
     },
     getlabResults: callBack => {
         pool.query(
@@ -48,6 +58,19 @@ module.exports = {
         pool.query(
             `select id,content from results where id = ?`,
             [id],
+            (error, results, fields) => {
+                if(error) {
+                    return callBack(error);
+                }
+                return callBack(null, results[0]);
+            }
+        );
+    },
+    getTestDetailsByName: (testName, callBack ) => {
+        //console.log("query " + testName)
+        pool.query(
+            `select * from testID where testName = ?`,
+            [testName],
             (error, results, fields) => {
                 if(error) {
                     return callBack(error);
